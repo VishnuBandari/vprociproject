@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         cluster = "vprod"
-        service = "vprosvc"
+        service = "vprodsvc"
     }
 
     stages {

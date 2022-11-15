@@ -6,22 +6,22 @@ pipeline {
     }
     
     environment {
-        SNAP_REPO = 'vprofile-snapshot'
+        SNAP_REPO = 'vishnu-snapshot'
 		NEXUS_USER = 'admin'
-		NEXUS_PASS = 'admin123'
-		RELEASE_REPO = 'vprofile-release'
-		CENTRAL_REPO = 'vpro-maven-central'
-		NEXUSIP = '172.31.5.4'
+		NEXUS_PASS = 'Bandari'
+		RELEASE_REPO = 'vishnu-release'
+		CENTRAL_REPO = 'vishnu-maven-central'
+		NEXUSIP = '172.31.22.31'
 		NEXUSPORT = '8081'
-		NEXUS_GRP_REPO = 'vpro-maven-group'
+		NEXUS_GRP_REPO = 'vishnu-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
         registryCredential = 'ecr:us-east-1:awscred'
-        appRegistry = '724337043127.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
+        appRegistry = '724337043127.dkr.ecr.us-east-1.amazonaws.com/vishnuappimg'
         vprofileRegistry = "https://724337043127.dkr.ecr.us-east-1.amazonaws.com"
-        cluster = "vstaging"
-        service = "vstageing"
+        cluster = "vishnu-staging"
+        service = "vishnuappimgsrc"
     }
 
     stages {

@@ -20,7 +20,7 @@ pipeline {
         SONARSCANNER = 'sonarscanner'
         registryCredential = 'ecr:us-east-1:awscred'
         appRegistry = '724337043127.dkr.ecr.us-east-1.amazonaws.com/vishnuappimg'
-        vprofileRegistry = "https://724337043127.dkr.ecr.us-east-1.amazonaws.com"
+        vishnuRegistry = "https://724337043127.dkr.ecr.us-east-1.amazonaws.com"
         cluster = "vb-1"
         service = "vbtasksrc"
     }
